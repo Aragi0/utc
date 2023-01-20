@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" sizes="76x76" href="public/images/utc-log.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/utc-log.png">
   <title>UTC</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="container">
     <aside>
       <div class="top">
         <div class="logo">
-          <img src="../public/images/utc-log.png" alt="">
+          <img src="images/utc-log.png" alt="">
           <h2>ADM-<span class="danger">UTC</span></h2>
         </div>
         <div class="close" id="close-btn">
@@ -197,7 +197,7 @@
             <small class="text-muted">Admin</small>
           </div>
           <div class="profile-photo">
-            <img src="../public/images/profile-1.jpg" alt="">
+            <img src="images/profile-1.jpg" alt="">
           </div>
         </div>
       </div>
@@ -215,7 +215,7 @@
           </div>
           <div class="update">
             <div class="profile-photo">
-              <img src="../public/images/profile-3.jpg" alt="">
+              <img src="images/profile-3.jpg" alt="">
             </div>
             <div class="message">
               <p><b>Mike Tyson</b>received his order of Night lion tech GPS drone.</p>
@@ -224,7 +224,7 @@
           </div>
           <div class="update">
             <div class="profile-photo">
-              <img src="../public/images/profile-4.jpg" alt="">
+              <img src="images/profile-4.jpg" alt="">
             </div>
             <div class="message">
               <p><b>Mike Tyson</b>received his order of Night lion tech GPS drone.</p>
@@ -294,8 +294,8 @@
       </div>
     </div>
   </div>
-  <script src="../resources/js/orders.js"></script>
-  <script src="../resources/js/script.js"></script>
+  <script src="js/orders.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
 
