@@ -1,43 +1,78 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>login</title>
-    <!--link para usar los iconos de fondt awison-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/login.css'>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/login.css" />
+    <title>Login</title>
+  </head>
+  <body>
     <div class="container">
-        <div class="box">
-            <div class="cover"></div>
-            <div class="shadow"></div>
-            <div class="content">
-                <div class="form">
-                    <h3 class="logo"><i class="fa-solid fa-key"></i></h3>
-                    <h2>Login</h2>
-                    <div class="inputBox">
-                        <input type="text" required>
-                        <i class="fa-solid fa-user"></i>
-                        <span>Nombre</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="password" required>
-                        <i class="fa-solid fa-lock"></i>
-                        <span>Contraseña</span>
-                    </div>
-                    <!--<div class="links">
-                        <a href="#"><i class="fa-solid fa-question"></i>La olvide</a>
-                        <a href="#"><i class="fa-solid fa-user-plus"></i>Nueva Cuenta</a>
-                    </div>-->
-                    <div class="inputBox">
-                        <input type="submit" value="Entrar">
-                    </div>
-                </div>
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Inicar Sesion</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
             </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Registrarase</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+          </form>
         </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>No tienes cuenta ?</h3>
+            <p>
+             Porfavor solicite su cuenta en este formulario
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Registro
+            </button>
+          </div>
+          <img src="images/log.svg" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Ya tien cuenta ?</h3>
+            <p>
+              Porfavor drigase al Inico de sesion
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Inicar Sesion
+            </button>
+          </div>
+          <img src="images/register.svg" class="image" alt="" />
+        </div>
+      </div>
     </div>
-</body>
+
+    <script src="js/app.js"></script>
+  </body>
 </html>
