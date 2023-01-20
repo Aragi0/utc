@@ -1,17 +1,25 @@
 <!DOCTYPE html5>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" sizes="76x76" href="images/utc-log.png">
+  <link rel="apple-touch-icon" href="images/utc-log.png">
   <title>UTC</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+  <!--de esta pagina toman los iconos https://fonts.google.com/icons?icon.platform=web&icon.set=Material+Icons&icon.style=Sharp
+   los iconos tienen que ser icon y sharp para que tomen las propiedades de la pagina lo que tienen que copiar es (images/loque se copea.png)
+  si quieren probar cualquier icono la sintaxis es
+  <span class="material-icons-sharp">
+    nombre en ingles
+  </span>     -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <div class="container">
-    <aside>
+  <div class="container"><!--inicio del contenedor-->
+    <aside> <!--Inicio de la barra de navegacion-->
       <div class="top">
         <div class="logo">
           <img src="images/utc-log.png" alt="">
@@ -62,8 +70,8 @@
           <h3>Calificaciones</h3>
         </a>
         <a href="#">
-          <span class="material-icons-sharp">
-            report_gmailerrorred
+        <span class="material-icons-sharp">
+            settings
           </span>
           <h3>Reportes</h3>
         </a>
@@ -86,10 +94,11 @@
           <h3>Salir</h3>
         </a>
       </div>
-    </aside>
+    </aside><!--fin de la barra de navegacion-->
 
     <main>
-      <h1>Dashboard</h1>
+      <h1>Administracion</h1>
+      <!--!!!!!!Apartir de aca pueden poner tablas y lo demas¡¡¡¡¡-->
       <div class="date">
         <input type="date">
       </div>
@@ -98,7 +107,6 @@
           <span class="material-icons-sharp">
             analytics
           </span>
-          <!--la class middle es el marco para los objetos-->
           <div class="middle">
             <div class="left">
               <h3>Total Sales</h3>
@@ -159,7 +167,7 @@
         </div>
       </div>
       <!--Este class recent- orders es nesesario para poner tablas con
-      reponsive disaing no pongan tablas tipo card-->
+      reponsive disaing !no pongan tablas tipo card!-->
       <div class="recent-orders">
         <h2>Recent Orders</h2>
         <table>
@@ -176,10 +184,11 @@
         </table>
         <a href="#">Ver mas</a>
       </div>
+      <!--!!!!Apartir de aca ya no puden poner tablas y lo demas¡¡¡¡¡-->
     </main>
 
-    <div class="right">
-      <div class="top">
+    <div class="right"><!--Inico de la area de notificaciones-->
+      <div class="top"><!--modo negro y blanco-->
         <button id="menu-btn">
           <span class="material-icons-sharp">menu</span>
         </button>
@@ -200,7 +209,8 @@
             <img src="images/profile-1.jpg" alt="">
           </div>
         </div>
-      </div>
+      </div><!--fin del modo negro y blanco-->
+      <!--Inico de las notificaciones-->
       <div class="recent-update">
         <h2>Recent Update</h2>
         <div class="updates">
@@ -241,14 +251,14 @@
               shopping_cart
             </span>
           </div>
-            <div class="right">
-              <div class="info">
-                <h3>ONLINE ORDERS</h3>
-                <small class="text-muted">Last 24 Hours</small>
-              </div>
-              <h5 class="success">+39%</h5>
-              <h3>3849</h3>
+          <div class="right">
+            <div class="info">
+              <h3>ONLINE ORDERS</h3>
+              <small class="text-muted">Last 24 Hours</small>
             </div>
+            <h5 class="success">+39%</h5>
+            <h3>3849</h3>
+          </div>
         </div>
 
         <div class="item offline">
@@ -257,14 +267,14 @@
               local_mall
             </span>
           </div>
-            <div class="right">
-              <div class="info">
-                <h3>OFFLINE ORDERS</h3>
-                <small class="text-muted">Last 24 Hours</small>
-              </div>
-              <h5 class="danger">-17%</h5>
-              <h3>1100</h3>
+          <div class="right">
+            <div class="info">
+              <h3>OFFLINE ORDERS</h3>
+              <small class="text-muted">Last 24 Hours</small>
             </div>
+            <h5 class="danger">-17%</h5>
+            <h3>1100</h3>
+          </div>
         </div>
 
         <div class="item customers">
@@ -273,14 +283,14 @@
               person
             </span>
           </div>
-            <div class="right">
-              <div class="info">
-                <h3>NEW CUSTOMERS</h3>
-                <small class="text-muted">Last 24 Hours</small>
-              </div>
-              <h5 class="danger">+25%</h5>
-              <h3>849</h3>
+          <div class="right">
+            <div class="info">
+              <h3>NEW CUSTOMERS</h3>
+              <small class="text-muted">Last 24 Hours</small>
             </div>
+            <h5 class="danger">+25%</h5>
+            <h3>849</h3>
+          </div>
         </div>
         <div class="item add-product">
           <div>
@@ -292,11 +302,10 @@
         </div>
 
       </div>
-    </div>
-  </div>
+    </div> <!--fin de las notificaciones-->
+  </div> <!--fin delconotenedor-->
   <script src="js/orders.js"></script>
   <script src="js/script.js"></script>
 </body>
+
 </html>
-
-

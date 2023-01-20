@@ -16,31 +16,31 @@
         <div class="signin-signup">
           <form action="#" class="sign-in-form">
             <h2 class="title">Inicar Sesion</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+            <div class="input-field"><!---aca es la barra de escritura del texto-->
+              <i class="fas fa-user"></i><!---icono de texto-->
+              <input type="text" placeholder="Username" /><!--aca se escribe-->
             </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+            <div class="input-field"><!---aca es la barra de escritura de la contraseña-->
+              <i class="fas fa-lock"></i><!---icono de contraseña-->
+              <input type="password" placeholder="Password" /><!--aca se escribe-->
             </div>
-            <input type="submit" value="Login" class="btn solid" />
+            <input type="submit" value="Login" class="btn solid" /><!--Bottom-->
           </form>
           <form action="#" class="sign-up-form">
             <h2 class="title">Registrarase</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Username" /><!--aca se escibe-->
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" placeholder="Email" /><!--aca se escibe-->
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Password" /><!--aca se escibe-->
             </div>
-            <input type="submit" class="btn" value="Sign up" />
+            <input type="submit" class="btn" value="Sign up" /><!--Bottom-->
           </form>
         </div>
       </div>
