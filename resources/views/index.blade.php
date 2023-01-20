@@ -158,7 +158,7 @@
           <small class="text-muted">Last 24 Hours</small>
         </div>
       </div>
-      <!--Este class recent- orders es nesesario para poner tablas con 
+      <!--Este class recent- orders es nesesario para poner tablas con
       reponsive disaing no pongan tablas tipo card-->
       <div class="recent-orders">
         <h2>Recent Orders</h2>
@@ -206,7 +206,7 @@
         <div class="updates">
           <div class="update">
             <div class="profile-photo">
-              <img src="../public/images/profile-2.jpg" alt="">
+              <img src="images/profile-2.jpg" alt="">
             </div>
             <div class="message">
               <p><b>Mike Tyson</b>received his order of Night lion tech GPS drone.</p>
