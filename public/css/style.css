@@ -2,7 +2,7 @@
 
 :root{
   --color-primary:#e2e06d;
-  --color-danger:#ff7782;
+  --color-danger:#ffc477;
   --color-success:#41f1b6;
   --color-warning:#ffbb55;
   --color-white:#fff;/*el bueno*/
@@ -164,6 +164,7 @@ aside .logo{
 }
 
 aside .logo img{
+  margin-left: 2em;
   width: 2rem;
   height: 2rem;
 }
@@ -177,12 +178,20 @@ aside .sidebar{
   flex-direction: column;
   height: 86vh;
   position: relative;
-  top: 3rem;
+  top: 2.78rem;
+  background: var(--color-white);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+aside .sidebar x{
+  height: 2rem ;
 }
 
 aside h3{
   font-weight: 500;
 }
+
 
 aside .sidebar a{
   display: flex;
@@ -540,15 +549,19 @@ main .recent-orders a{
 .right .sales-analytics .add-product div h3{
   font-weight: 600;
 }
-
+/*-----------------------------------------media cueri 1200 px------------------------------------------*/
 @media screen and (max-width:1200px) {
   .container{
     width: 94%;
-    grid-template-columns: 7rem auto 23rem;
+    grid-template-columns: 6rem auto 23rem;
   }
   aside .logo h2{
     display: none;
   }
+  aside .logo img{
+    margin-left: 2em;
+  }
+
   aside .sidebar h3{
     display: none;
   }
@@ -557,7 +570,7 @@ main .recent-orders a{
   }
   aside .sidebar a:last-child{
     position: relative;
-    margin-top: 1.8rem;
+    margin-top: 5rem;
   }
   main .insights{
     grid-template-columns: 1fr;
@@ -574,7 +587,7 @@ main .recent-orders a{
     width: 83vw;
   }
 }
-
+/*-----------------------------------------media cueri 800 px------------------------------------------*/
 @media screen and (max-width:768px) {
   .container{
     width: 100%;
@@ -603,6 +616,11 @@ main .recent-orders a{
   }
   aside .logo h2{
     display: inline;
+  }
+  aside .sidebar{
+    background: none;
+    border-radius: none;
+    box-shadow: none;
   }
   aside .sidebar h3{
     display: inline;
@@ -645,14 +663,11 @@ main .recent-orders a{
     height: 4.6rem;
     background: var(--color-white);
     width: 100%;
-    margin: 0;
-    z-index: 2;
     box-shadow: 0 1rem 1rem var(--color-light);
   }
   .right .top .theme-toggler{
     width: 4.4rem;
     position: absolute;
-    left: 66%;
   }
   .right .profile .info{
     display: none;

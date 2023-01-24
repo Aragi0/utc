@@ -36,7 +36,8 @@
         </div>
       </div>
       <div class="sidebar">
-        <a href="#" class="active">
+        <x></x>
+        <a href="#"><!--se quito la class:"active" para mejorar la vista-->
           <span class="material-icons-sharp">
             grid_view
           </span>
@@ -65,7 +66,6 @@
             mail_outline
           </span>
           <h3>Mensajes</h3>
-          <span class="message-count">26</span>
         </a>
         <a href="#">
           <span class="material-icons-sharp">
