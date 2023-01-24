@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::view('index','index');
 
 Route::view('login','login');
+
+//En esta parte está enrutado la plantilla que esta dentro de la carpeta layaout
+
+Route::view('plantilla','layaout.plantilla');
+
+//En esta parte estaá enrutado todos los modulos de altas, estan dentro de la carpeta altas
+
+Route::view('altamaestro','altas.altaMaestro');
