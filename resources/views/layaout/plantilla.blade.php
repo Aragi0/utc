@@ -15,7 +15,8 @@
   si quieren probar cualquier icono la sintaxis es
   <span class="material-icons-sharp">
     nombre en ingles
-  </span>     -->
+  </span>-->
+
   <link rel="stylesheet" href="css/style.css">
 
 </head>
