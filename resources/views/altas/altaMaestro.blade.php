@@ -2,7 +2,7 @@
 @section('contenido')
 <!-- A partir de aqui se mostrara el modulo de alta de maestros-->
 
-    <table class="table table-striped">
+    <table class="">
     <thead>
         <tr>
         <th>CODIGO</th>
