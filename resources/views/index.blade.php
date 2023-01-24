@@ -99,7 +99,7 @@
     <main>
       <h1>Administracion</h1>
       <!--!!!!!!Apartir de aca pueden poner tablas y lo demas¡¡¡¡¡-->
-      <div class="date">
+      <--<div class="date">
         <input type="date">
       </div>
       <div class="insights">
