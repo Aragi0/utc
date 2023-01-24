@@ -36,7 +36,7 @@
         </div>
       </div>
       <div class="sidebar">
-        <x></x>
+        <x></x><!--esto es para dejar margen entre los iconos y la barra NV-->
         <a href="#"><!--se quito la class:"active" para mejorar la vista-->
           <span class="material-icons-sharp">
             grid_view
@@ -105,7 +105,6 @@
       @yield('contenido')
       <!--!!!!Apartir de aca ya no puden poner tablas y lo demas¡¡¡¡¡-->
     </main>
-
     <div class="right"><!--Inico de la area de notificaciones-->
       <div class="top"><!--modo negro y blanco-->
         <button id="menu-btn">
@@ -119,7 +118,8 @@
             dark_mode
           </span>
         </div>
-      </div><!--fin del modo negro y blanco-->
+      </div>
+    </div><!--fin del modo negro y blanco-->
   </div> <!--fin delconotenedor-->
   <script src="js/orders.js"></script>
   <script src="js/script.js"></script>

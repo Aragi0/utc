@@ -33,7 +33,7 @@
 
 .dark-theme-variables{
   --color-background:#181a1e;
-  --color-background:#f6f6f9;
+  --color-background:#f0f0f0;
   --color-white:#202528;
   --color-white:#fff;
   --color-dark:#edeffd;
@@ -367,13 +367,14 @@ main .recent-orders{
 }
 
 main .recent-orders h2{
+  margin-top: 4em;
   margin-bottom: 0.8rem;
   text-align: center;
 }
 
 main .recent-orders table{
   background: var(--color-white);
-  width: 135%;
+  width: 128%;
   border-radius: var(--card-border-radius);
   padding: var(--card-padding);
   text-align: center;
