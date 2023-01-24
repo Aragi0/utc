@@ -566,11 +566,11 @@ main .recent-orders a{
     display: none;
   }
   aside .sidebar a{
-    width: 5.6rem;
+    width: 5.8rem;
   }
   aside .sidebar a:last-child{
     position: relative;
-    margin-top: 5rem;
+    margin-top: 24rem;
   }
   main .insights{
     grid-template-columns: 1fr;
@@ -631,8 +631,19 @@ main .recent-orders a{
   }
   aside .sidebar a:last-child{
     position: absolute;
-    bottom: 5rem;
+    bottom: 0;
+    border-radius: 14px;
+    box-shadow: 2px 2px 20px 2px #181a1e;
+    width: 10em;
+    height: 4em;
+    margin-left: 4em;
+    align-items: center;
   }
+
+  aside .sidebar .salir span{
+    margin-left: 1em;
+  }
+
   aside .close{
     display: inline-block;
     cursor: pointer;
@@ -663,6 +674,8 @@ main .recent-orders a{
     height: 4.6rem;
     background: var(--color-white);
     width: 100%;
+    margin: 0;
+    z-index: 2;
     box-shadow: 0 1rem 1rem var(--color-light);
   }
   .right .top .theme-toggler{

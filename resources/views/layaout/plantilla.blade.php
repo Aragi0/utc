@@ -91,7 +91,7 @@
           </span>
           <h3>Agregar</h3>
         </a>
-        <a href="#">
+        <a href="#" class="salir">
           <span class="material-icons-sharp">
             logout
           </span>
