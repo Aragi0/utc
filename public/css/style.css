@@ -32,15 +32,15 @@
 }
 
 .dark-theme-variables{
-  --color-background:#181a1e;
+  --color-background:#181a1e;/*el bueno*/
   --color-background:#f0f0f0;
-  --color-white:#202528;
+  --color-white:#202528;/*el bueno*/
   --color-white:#fff;
-  --color-dark:#edeffd;
+  --color-dark:#edeffd;/*el bueno*/
   --color-dark:#363949;
-  --color-dark-variant:#a3bdcc;
+  --color-dark-variant:#a3bdcc;/*el bueno*/
   --color-dark-variant:#677483;
-  --color-light:rgba(0,0,0,0.4);
+  --color-light:rgba(0,0,0,0.4);/*el bueno*/
   --color-light:rgba(132, 139, 200, 0.18);
   --box-shadow:0 2rem 3rem var(--color-light);
 }

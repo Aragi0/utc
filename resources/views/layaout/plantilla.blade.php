@@ -111,7 +111,7 @@
           <span class="material-icons-sharp">menu</span>
         </button>
         <div class="theme-toggler">
-          <span class="material-icons-sharp active">
+        <span class="material-icons-sharp active">
             light_mode
           </span>
           <span class="material-icons-sharp">

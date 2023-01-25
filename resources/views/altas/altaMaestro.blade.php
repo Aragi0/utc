@@ -19,7 +19,6 @@
                 <td>Francisco Javier</td>
                 <td>Tamay Canul</td>
                 <td>9881090497</td>
-                <td></td>
             </tr>
         </tbody>
         <tbody>
@@ -28,7 +27,6 @@
                 <td>Oscar Aldair</td>
                 <td>Matu Miranda</td>
                 <td>9881090237</td>
-                <td></td>
             </tr>
         </tbody>
         <tbody>
@@ -37,16 +35,14 @@
                 <td>David Asael</td>
                 <td>Tamay Canul</td>
                 <td>913123197</td>
-                <td></td>
             </tr>
         </tbody>
         <tbody>
             <tr>
                 <td>12323</td>
                 <td>Hector Eduardo</td>
-                <td>cam</td>
+                <td>Ortiz can</td>
                 <td>9292739192</td>
-                <td></td>
             </tr>
         </tbody>
     </table>
