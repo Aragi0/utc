@@ -28,3 +28,7 @@ Route::view('plantilla','layaout.plantilla');
 //En esta parte estaá enrutado todos los modulos de altas, estan dentro de la carpeta altas
 
 Route::view('altamaestro','altas.altaMaestro');
+Route::view('altaalumno','altas.altaAlumnos');
+Route::view('altamatricula','altas.altaMatricula');
+Route::view('altaasignatura','altas.altaAsignatura');
+Route::view('altacarrera','altas.altaCarrera');
