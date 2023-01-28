@@ -43,53 +43,35 @@
           </span>
           <h3>Inicio</h3>
         </a>
-        <a href="#">
+        <a href="altamaestro">
           <span class="material-icons-sharp">
             person_outline
           </span>
           <h3>Maestros</h3>
         </a>
-        <a href="#">
+        <a href="altaalumno">
           <span class="material-icons-sharp">
-            receipt_long
+            face
+          </span>
+          <h3>Alumno</h3>
+        </a>
+        <a href="altamatricula">
+          <span class="material-icons-sharp">
+            credit_card
+          </span>
+          <h3>Matricula</h3>
+        </a>
+        <a href="altaasignatura">
+          <span class="material-icons-sharp">
+            recent_actors
           </span>
           <h3>Materias</h3>
         </a>
-        <a href="#">
+        <a href="altacarrera">
           <span class="material-icons-sharp">
-            insights
+            menu_book
           </span>
-          <h3>Estadisticas</h3>
-        </a>
-        <a href="#">
-          <span class="material-icons-sharp">
-            mail_outline
-          </span>
-          <h3>Mensajes</h3>
-        </a>
-        <a href="#">
-          <span class="material-icons-sharp">
-            inventory
-          </span>
-          <h3>Calificaciones</h3>
-        </a>
-        <a href="#">
-          <span class="material-icons-sharp">
-            settings
-          </span>
-          <h3>Reportes</h3>
-        </a>
-        <a href="#">
-          <span class="material-icons-sharp">
-            settings
-          </span>
-          <h3>Configuraciones</h3>
-        </a>
-        <a href="#">
-          <span class="material-icons-sharp">
-            add
-          </span>
-          <h3>Agregar</h3>
+          <h3>Carreras</h3>
         </a>
         <a href="#" class="salir">
           <span class="material-icons-sharp">
@@ -99,7 +81,6 @@
         </a>
       </div>
     </aside><!--fin de la barra de navegacion-->
-
     <main>
       <!-- Desde aqui puedes poner todo el contenido a mostrar de cada uno de los modulos -->
       @yield('contenido')
@@ -111,7 +92,7 @@
           <span class="material-icons-sharp">menu</span>
         </button>
         <div class="theme-toggler">
-        <span class="material-icons-sharp active">
+          <span class="material-icons-sharp active">
             light_mode
           </span>
           <span class="material-icons-sharp">

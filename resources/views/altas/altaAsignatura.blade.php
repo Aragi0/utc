@@ -5,22 +5,20 @@
     <h2>Asiganturas</h2>
     <table>
         <thead>
-        <tr>
-        <th>ID</th>
-        <th>CODIGO DE ASIGNATURA</th>
-        <th>NOMBRE DE ASIGNATURA</th>
-        
-        </tr>
+            <tr>
+                <th>ID</th>
+                <th>CODIGO DE ASIGNATURA</th>
+                <th>NOMBRE DE ASIGNATURA</th>
+            </tr>
         </thead>
         <tbody>
-        <tr>
-        <td>1</td>
-        <td>186456</td>
-        <td>Ingles VII</td>
+            <tr>
+                <td>1</td>
+                <td>186456</td>
+                <td>Ingles VII</td>
 
-        </tr>
+            </tr>
         </tbody>
-        
     </table>
 </div>
 
