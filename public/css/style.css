@@ -6,24 +6,22 @@
   --color-success: #41f1b6;
   --color-warning: #ffbb55;
   --color-white: #fff;
-  /*el bueno*/
-  --color-white: #202528;
   --color-info-dark: #7d8da1;
-  /*el bueno*/
-  --color-info-light: #dce1eb;
   --color-dark: #363949;
-  /*el bueno*/
-  --color-dark: #edeffd;
+  --bottom-darck: #edeffd;
+  --bottom-color: #202528;
   --color-light: rgba(132, 139, 200, 0.18);
-  /*el bueno*/
-  --color-light: rgba(0, 0, 0, 0.4);
   --color-primary-variant: #111e88;
   --color-dark-variant: #677483;
-  /*el bueno*/
-  --color-dark-variant: #a3bdcc;
   --color-background: #f6f6f9;
-  /*el bueno*/
+  /*caombio de modo defauld*/
+  --color-white: #202528;
+  --color-info-light: #dce1eb;
+  --color-dark: #edeffd;
   --color-background: #181a1e;
+  --color-dark-variant: #a3bdcc;
+  --color-light: rgba(0, 0, 0, 0.4);
+  /*fin del modo defauld*/
   --card-border-radius: 2rem;
   --border-radius-1: 0.4rem;
   --border-radius-2: 0.8rem;
@@ -36,21 +34,21 @@
 
 .dark-theme-variables {
   --color-background: #181a1e;
-  /*el bueno*/
-  --color-background: #f0f0f0;
   --color-white: #202528;
-  /*el bueno*/
-  --color-white: #fff;
   --color-dark: #edeffd;
-  /*el bueno*/
-  --color-dark: #363949;
   --color-dark-variant: #a3bdcc;
-  /*el bueno*/
-  --color-dark-variant: #677483;
+  --bottom-darck: #202528;
+  --bottom-color: #edeffd;
   --color-light: rgba(0, 0, 0, 0.4);
-  /*el bueno*/
-  --color-light: rgba(132, 139, 200, 0.18);
   --box-shadow: 0 2rem 3rem var(--color-light);
+  /*caombio de modo defauld*/
+  --color-background: #f0f0f0;
+  --color-white: #fff;
+  --color-dark: #363949;
+  --color-dark-variant: #677483;
+  --color-dark-variant: #a3bdcc;
+  --color-light: rgba(132, 139, 200, 0.18);
+  /*fin del modo defauld*/
 }
 
 * {
@@ -781,6 +779,7 @@ main .recent-orders a {
   background: var(--color-white);
   border-radius: var(--card-border-radius);
   box-shadow: var(--box-shadow);
+  color: var(--color-dark);
 }
 
 .content-modal h2 {
@@ -797,8 +796,8 @@ main .recent-orders a {
 
 .content-modal .btn-cerrar label {
   padding: 7px 10px;
-  background: #fff;
-  color: #363636;
+  background: var(--bottom-darck);
+  color: var(--bottom-color);
   border-radius: 5px;
   cursor: pointer;
   transition: all 300ms ease;
