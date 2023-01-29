@@ -32,3 +32,4 @@ Route::view('altaalumno','altas.altaAlumnos');
 Route::view('altamatricula','altas.altaMatricula');
 Route::view('altaasignatura','altas.altaAsignatura');
 Route::view('altacarrera','altas.altaCarrera');
+Route::view('vistamodal','altas.vistamodal');
