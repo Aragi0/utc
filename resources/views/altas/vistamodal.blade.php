@@ -15,9 +15,6 @@
         declara unas cosas mas para que el contenido que esten poniendo funcione veien-->
         <p>este es un ejemplo de contenido, la ventana se deve de adaptar a el tipo de contenido que pongan
             amenos que le ayan puesto propiedades al contenido y estas seam muy grandes</p>
-
-
-
         <!--despues de el contenido sige los botones este es el ejemplo de el botton de cerrar-->
         <div class="btn-cerrar">
             <label for="btn-modal">Cerrar</label>
