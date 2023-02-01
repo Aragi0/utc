@@ -15,7 +15,7 @@
         </div>
         <p>adhiuasd uweguhijd n annid amudnasmaubdsunasdmashbd nasdnas dasnda sddad amudnasmaubdsunasdmashbd nasdnas dasnda sddad amudnasmaubdsunasdmashbd
             nasdnas dasnda sddad amudnasmaubdsunasdmashbd nasdnas dasnda sddad amudnasmaubdsunasdmashbd nasdnas dasnda sddad amudnasmaubdsunasdmashbd nasdnas
-            dasnda sdda</p>
+            dasnda sddsdadsaa</p>
         <div class="btn-cerrar">
             <label for="btn-modal">Cerrar</label>
         </div>

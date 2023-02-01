@@ -374,9 +374,16 @@ main .recent-orders {
 }
 
 main .recent-orders h2 {
-  margin-top: 4em;
-  margin-bottom: 0.8rem;
+  margin: 0;
+  margin-top: 3.55em;
+  padding: 0.5em;
+  margin-bottom: 1.5rem;
   text-align: center;
+  background: var(--color-white);
+  width: 128%;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: var(--box-shadow);
 }
 
 main .recent-orders table {
