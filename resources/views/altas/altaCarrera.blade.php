@@ -2,7 +2,7 @@
 @section('contenido')
 <!-- A partir de aqui se mostrara el modulo de alta a los alumnos-->
 <div class="recent-orders">
-    <h2>Asiganturas</h2>
+    <h2>Carrera</h2>
     <table>
         <thead>
             <tr>
