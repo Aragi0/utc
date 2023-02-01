@@ -10,17 +10,17 @@
 <input type="checkbox" id="btn-modal" />
 <div class="container-modal">
     <div class="content-modal">
-        <h2>Titulo de contenido</h2>
-        <!--Aca ponene el contenido de la ventana modal si ven que no se ve vien el contenido a visen para que revise pueda que tenga que de
-        declara unas cosas mas para que el contenido que esten poniendo funcione veien-->
-        <p>este es un ejemplo de contenido, la ventana se deve de adaptar a el tipo de contenido que pongan
-            amenos que le ayan puesto propiedades al contenido y estas seam muy grandes</p>
-        <!--despues de el contenido sige los botones este es el ejemplo de el botton de cerrar-->
+        <h2>Titulo</h2>
+        <div class="tabla-modal">
+        </div>
+        <p>adhiuasd uweguhijd n annid amudnasmaubdsunasdmashbd nasdnas dasnda sddad amudnasmaubdsunasdmashbd nasdnas dasnda sddad amudnasmaubdsunasdmashbd
+            nasdnas dasnda sddad amudnasmaubdsunasdmashbd nasdnas dasnda sddad amudnasmaubdsunasdmashbd nasdnas dasnda sddad amudnasmaubdsunasdmashbd nasdnas
+            dasnda sdda</p>
         <div class="btn-cerrar">
             <label for="btn-modal">Cerrar</label>
         </div>
-        <!--no pongan contenido fuera de este div puesto que las propiedades se apliacin adentro-->
     </div>
+    <!--no pongan contenido fuera de este div puesto que las propiedades se apliacin adentro-->
     <label for="btn-modal" class="cerrar-modal"></label>
 </div>
 

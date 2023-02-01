@@ -763,11 +763,12 @@ main .recent-orders a {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(150, 150, 144, 0.075);
+  background-color: rgba(32, 32, 32, 0.596);
   display: none;
   justify-content: center;
   align-items: center;
   z-index: 100;
+  padding: 1em;
 }
 
 #btn-modal:checked~.container-modal {
@@ -780,6 +781,7 @@ main .recent-orders a {
   border-radius: var(--card-border-radius);
   box-shadow: var(--box-shadow);
   color: var(--color-dark);
+  text-align: center;
 }
 
 .content-modal h2 {
