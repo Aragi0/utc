@@ -10,12 +10,27 @@
 <input type="checkbox" id="btn-modal" />
 <div class="container-modal">
     <div class="content-modal">
-        <h2>Titulo de contenido</h2>
-        <!--Aca ponene el contenido de la ventana modal si ven que no se ve vien el contenido a visen para que revise pueda que tenga que de
-        declara unas cosas mas para que el contenido que esten poniendo funcione veien-->
-        <p>este es un ejemplo de contenido, la ventana se deve de adaptar a el tipo de contenido que pongan
-            amenos que le ayan puesto propiedades al contenido y estas seam muy grandes</p>
-        <!--despues de el contenido sige los botones este es el ejemplo de el botton de cerrar-->
+    <table class="table table-striped">
+    <thead class="thead-dark">
+          <th>SKU</th>
+          <th>PRODUCTO</th>
+          <th>OPERACION</th>
+          <th>PRECIO</th>
+          <th>CANTIDAD</th>
+          <th>TOTAL</th>
+        </thead>
+          
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
         <div class="btn-cerrar">
             <label for="btn-modal">Cerrar</label>
         </div>
