@@ -4,6 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Matriculas;
+use App\Models\Asignaturas;
+use App\Models\Maestros;
+use App\Models\Carreras;
 
 class Grupo extends Model
 {
@@ -36,6 +40,10 @@ class Grupo extends Model
     }
 
     public function maestros(){
-        return $this->belongsTo(Matriculas::class, 'id_matricula');
+        return $this->belongsTo(Maestros::class, 'id_matricula');
+    }
+
+    public function carrera(){
+        return $this->belongsTo(Carreras::class, 'id_matricula');
     }
 }
