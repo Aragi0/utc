@@ -607,6 +607,19 @@ main .recent-orders a {
     margin: 2rem 0rem 0rem 8.8rem;
   }
 
+  main .recent-orders h2 {
+    margin: 0;
+    margin-top: 3.55em;
+    padding: 0.5em;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background: var(--color-white);
+    width: 87%;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+  }
+
   main .recent-orders table {
     width: 83vw;
   }
@@ -690,6 +703,19 @@ main .recent-orders a {
     position: relative;
     margin: 3rem 0 0 0;
     width: 100%;
+  }
+
+  main .recent-orders h2 {
+    margin: 0;
+    margin-top: 3.55em;
+    padding: 0.5em;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background: var(--color-white);
+    width: 99%;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
   }
 
   main .recent-orders table {
