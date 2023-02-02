@@ -612,12 +612,8 @@ main .recent-orders a {
     margin-top: 3.55em;
     padding: 0.5em;
     margin-bottom: 1.5rem;
-    text-align: center;
-    background: var(--color-white);
     width: 87%;
     border-radius: 16px;
-    text-align: center;
-    box-shadow: var(--box-shadow);
   }
 
   main .recent-orders table {
@@ -710,12 +706,8 @@ main .recent-orders a {
     margin-top: 3.55em;
     padding: 0.5em;
     margin-bottom: 1.5rem;
-    text-align: center;
-    background: var(--color-white);
     width: 99%;
     border-radius: 16px;
-    text-align: center;
-    box-shadow: var(--box-shadow);
   }
 
   main .recent-orders table {
