@@ -36,7 +36,7 @@
   --color-background: #181a1e;
   --color-white: #202528;
   --color-dark: #edeffd;
-  --color-dark-variant: #a3bdcc;
+  --color-dark-variant: #899eaa;
   --bottom-darck: #202528;
   --bottom-color: #edeffd;
   --color-light: rgba(0, 0, 0, 0.4);
@@ -44,9 +44,9 @@
   /*caombio de modo defauld*/
   --color-background: #f0f0f0;
   --color-white: #fff;
-  --color-dark: #363949;
+  --color-dark: #363949;/*color de los titulos*/
   --color-dark-variant: #677483;
-  --color-dark-variant: #a3bdcc;
+  --color-dark-variant: #677483;
   --color-light: rgba(132, 139, 200, 0.18);
   /*fin del modo defauld*/
 }
