@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\RegistroPagosController;
+use App\Http\Controllers\ServiciosController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +23,8 @@ Route::view('index','index');
 
 Route::view('login','login');
 
+Route::view('nuevo','nuevo');
+
 //En esta parte está enrutado la plantilla que esta dentro de la carpeta layaout
 
 Route::view('plantilla','layaout.plantilla');
@@ -33,3 +37,12 @@ Route::view('altamatricula','altas.altaMatricula');
 Route::view('altaasignatura','altas.altaAsignatura');
 Route::view('altacarrera','altas.altaCarrera');
 Route::view('vistamodal','altas.vistamodal');
+
+
+
+
+
+
+
+Route::resource('servicios', App\Http\Controllers\ServiciosController::class);
+Route::resource('registrop', App\Http\Controllers\RegistroPagosController::class);
