@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AlumnosController;
+use App\Http\Controllers\CarrerasController;
 use App\Http\Controllers\MaestrosController;
 use App\Http\Controllers\GradoMaestroController;
 /*
@@ -46,3 +47,25 @@ Route::resource('servicios', App\Http\Controllers\ServiciosController::class);
 Route::resource('registrop', App\Http\Controllers\RegistroPagosController::class);
 
 Route::apiResource('apiCarreras',CarrerasController::class);
+
+// AQUI SE VAN A ENRUTAR TODAS LAS VISTAS
+
+// RUTAS DE OSCAR 
+
+// RUTAS DE DAVID 
+
+// RUTAS DE HECTOR 
+
+// RUTAS DE PANCHO
+
+
+// AQUI SE VAN A ENRUTAR TODAS LAS APIS (CONTROLADORES)
+
+// RUTAS DE OSCAR 
+
+// RUTAS DE DAVID 
+
+// RUTAS DE HECTOR 
+
+// RUTAS DE PANCHO
+Route::apiResource('apiCarrera', CarrerasController::class);
