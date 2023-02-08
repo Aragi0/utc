@@ -15,6 +15,9 @@
     nombre en ingles
   </span>-->
   <link rel="stylesheet" href="css/style.css">
+  <!-- Aqui esta el token de vue -->
+  <meta name="token" id="token" value="{{ csrf_token() }}">
+  <!-- aqui ya finaliza el token de vue -->
 </head>
 
 <body>
@@ -100,6 +103,9 @@
   </div> <!--fin delconotenedor-->
   <script src="js/script.js"></script>
   <script src="js/reload.js"></script>
+  <script src="js/vue.js"></script>
+  <script src="js/vue-resource.js"></script>
+  <script src="js/vue-resource.min.js"></script>
   @stack('scripts')
 </body>
 

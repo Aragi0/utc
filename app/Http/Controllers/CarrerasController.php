@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
+use App\Models\Carreras;
 
 class CarrerasController extends Controller
 {
@@ -14,6 +16,7 @@ class CarrerasController extends Controller
     public function index()
     {
         //
+        return Carreras::all();
     }
 
     /**
@@ -25,6 +28,13 @@ class CarrerasController extends Controller
     public function store(Request $request)
     {
         //
+        $carrera=new Carreras();
+        $carrera->id=$request->get('id');
+        $carrera->nombre=$request->get('codigo');
+        $carrera->precio=$request->get('nombre_carrera');
+        $carrera->cantidad=$request->get('id_plan');
+
+        $carrera->save();
     }
 
     /**
@@ -36,6 +46,7 @@ class CarrerasController extends Controller
     public function show($id)
     {
         //
+        return Carreras::find($id);
     }
 
     /**
@@ -48,6 +59,13 @@ class CarrerasController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $carrera= Carreras::find($id);
+        $carrera->id=$request->get('id');
+        $carrera->nombre=$request->get('codigo');
+        $carrera->precio=$request->get('nombre_carrera');
+        $carrera->cantidad=$request->get('id_plan');
+
+        $carrera->update();
     }
 
     /**
@@ -59,5 +77,7 @@ class CarrerasController extends Controller
     public function destroy($id)
     {
         //
+        $carrera= Carreras::find($id);
+        $carrera->delete();
     }
 }

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CarrerasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,3 +34,6 @@ Route::view('altamatricula','altas.altaMatricula');
 Route::view('altaasignatura','altas.altaAsignatura');
 Route::view('altacarrera','altas.altaCarrera');
 Route::view('vistamodal','altas.vistamodal');
+
+// En esta parte se encontraran enrutadas todas las API'S
+Route::apiResource('apiCarreras',CarrerasController::class);
