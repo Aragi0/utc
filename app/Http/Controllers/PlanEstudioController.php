@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Plan_Estudio;
 
 class Plan_EstudioController extends Controller
 {
@@ -14,6 +15,7 @@ class Plan_EstudioController extends Controller
     public function index()
     {
         //
+        return Plan_Estudio::all();
     }
 
     /**
