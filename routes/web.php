@@ -1,12 +1,9 @@
 <?php
 
-use App\Http\Controllers\RegistroPagosController;
-use App\Http\Controllers\ServiciosController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CarrerasController;
-use App\Http\Controllers\Plan_EstudioController;
-use App\Http\Controllers\AsignaturasController;
-
+use App\Http\Controllers\AlumnosController;
+use App\Http\Controllers\MaestrosController;
+use App\Http\Controllers\GradoMaestroController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,8 +23,6 @@ Route::view('index','index');
 
 Route::view('login','login');
 
-Route::view('nuevo','nuevo');
-
 //En esta parte está enrutado la plantilla que esta dentro de la carpeta layaout
 
 Route::view('plantilla','layaout.plantilla');
@@ -42,12 +37,7 @@ Route::view('altacarrera','altas.altaCarrera');
 Route::view('vistamodal','altas.vistamodal');
 
 
+Route::get('/apiAlumnos',[AlumnosController::class, 'index']);
 
-
-
-Route::resource('servicios', App\Http\Controllers\ServiciosController::class);
-Route::resource('registrop', App\Http\Controllers\RegistroPagosController::class);
-//AQUI SE ENRUTARAN TODAS LAS APIS A USAR
-Route::apiResource('apiCarreras',CarrerasController::class);
-Route::apiResource('apiPlan',Plan_EstudioController::class);
-Route::apiResource('apiAsignatura',AsignaturasController::class);
+Route::apiResource('apiMaestros',MaestrosController::class);
+Route::apiResource('apiGradoMae',GradoMaestroController::class);

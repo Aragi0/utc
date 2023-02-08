@@ -101,7 +101,6 @@
       </div>
     </div><!--fin del modo negro y blanco-->
   </div> <!--fin delconotenedor-->
-  <script src="js/script.js"></script>
   <script src="js/reload.js"></script>
   <script src="js/vue.js"></script>
   <script src="js/vue-resource.js"></script>

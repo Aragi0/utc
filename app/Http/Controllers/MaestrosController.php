@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Maestros;
 
 class MaestrosController extends Controller
 {
@@ -13,7 +14,7 @@ class MaestrosController extends Controller
      */
     public function index()
     {
-        //
+        return Maestros::all();
     }
 
     /**

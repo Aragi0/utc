@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Alumnos;
 
 class AlumnosController extends Controller
 {
@@ -13,7 +14,7 @@ class AlumnosController extends Controller
      */
     public function index()
     {
-        //
+        return $alumnos=Alumnos::all();
     }
 
     /**
@@ -24,7 +25,7 @@ class AlumnosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -35,7 +36,7 @@ class AlumnosController extends Controller
      */
     public function show($id)
     {
-        //
+        return $alumnos=Alumnos::find($id);
     }
 
     /**
