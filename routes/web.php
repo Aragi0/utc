@@ -41,3 +41,8 @@ Route::get('/apiAlumnos',[AlumnosController::class, 'index']);
 
 Route::apiResource('apiMaestros',MaestrosController::class);
 Route::apiResource('apiGradoMae',GradoMaestroController::class);
+
+Route::resource('servicios', App\Http\Controllers\ServiciosController::class);
+Route::resource('registrop', App\Http\Controllers\RegistroPagosController::class);
+
+Route::apiResource('apiCarreras',CarrerasController::class);
