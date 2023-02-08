@@ -1,4 +1,4 @@
-@extends('nuevo')
+@extends('layaout.plantilla')
 @section('contenido')
 <div class= "row mt-3">
     <div class="col-md-4 offset-md-4">

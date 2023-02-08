@@ -11,6 +11,7 @@
                 <th>CODIGO DE CARRERA</th>
                 <th>NOMBRE DE LA CARRERA</th>
                 <th>PLAN DE ESTUDIO</th>
+                <th>ACCIONES</th>
             </tr>
         </thead>
         <tbody>

@@ -13,7 +13,7 @@ class Plan_Estudio extends Model
 
     protected $primaryKey='id';
 
-    protected $whit=[''];
+    protected $whit=['asignaturas'];
 
     public $incrementing=false;
 
@@ -21,8 +21,14 @@ class Plan_Estudio extends Model
 
     protected $fillable=[
         'id',
-        'codigo',
-        'nombre_carrera',
-        'id_plan'
+        'id_asignatura',
+        'nombre_plan',
+        'anio',
+        'cuatrimestres',
+        'horas'
     ];
+
+    public function asignatura(){
+        return $this->belongsTo(Asignaturas::class, 'id_asignatura');
+    }
 }
