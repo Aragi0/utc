@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="images/utc-log.png">
   <title>UTC</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-
+  
 
   <!--de esta pagina toman los iconos https://fonts.google.com/icons?icon.platform=web&icon.set=Material+Icons&icon.style=Sharp
    los iconos tienen que ser icon y sharp para que tomen las propiedades de la pagina lo que tienen que copiar es (images/loque se copea.png)
@@ -104,6 +104,8 @@
   </div> <!--fin delconotenedor-->
   <script src="js/orders.js"></script>
   <script src="js/reload.js"></script>
+  <script type="text/javascript" src="{{asset('js/vue.js')}}"></script>
+  <script type="text/javascript" src="{{asset('js/vue-resource.js')}}"></script>
   @stack('scripts')
 </body>
 

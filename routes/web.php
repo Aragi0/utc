@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AlumnosController;
+use App\Http\Controllers\MaestrosController;
+use App\Http\Controllers\GradoMaestroController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,3 +35,9 @@ Route::view('altamatricula','altas.altaMatricula');
 Route::view('altaasignatura','altas.altaAsignatura');
 Route::view('altacarrera','altas.altaCarrera');
 Route::view('vistamodal','altas.vistamodal');
+
+
+Route::get('/apiAlumnos',[AlumnosController::class, 'index']);
+
+Route::apiResource('apiMaestros',MaestrosController::class);
+Route::apiResource('apiGradoMae',GradoMaestroController::class);

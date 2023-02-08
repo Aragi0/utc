@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\GradoMaestro;
 
-class Grado_MaestroController extends Controller
+class GradoMaestroController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,7 @@ class Grado_MaestroController extends Controller
      */
     public function index()
     {
-        //
+        return GradoMaestro::all();
     }
 
     /**
