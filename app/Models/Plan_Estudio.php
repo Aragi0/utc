@@ -4,17 +4,16 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Plan_Estudio;
 
-class Carreras extends Model
+class Plan_Estudio extends Model
 {
     use HasFactory;
 
-    protected $table='carreras';
+    protected $table='plan_estudio';
 
     protected $primaryKey='id';
 
-    protected $whit=['plan_estudio'];
+    protected $whit=[''];
 
     public $incrementing=false;
 
@@ -26,8 +25,4 @@ class Carreras extends Model
         'nombre_carrera',
         'id_plan'
     ];
-
-    public function plan(){
-        return $this->belongsTo(Plan_Estudio::class, 'id_plan');
-    }
 }
