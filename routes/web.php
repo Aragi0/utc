@@ -38,3 +38,12 @@ Route::view('altamatricula','altas.altaMatricula');
 Route::view('altaasignatura','altas.altaAsignatura');
 Route::view('altacarrera','altas.altaCarrera');
 Route::view('vistamodal','altas.vistamodal');
+
+
+
+
+
+Route::resource('servicios', App\Http\Controllers\ServiciosController::class);
+Route::resource('registrop', App\Http\Controllers\RegistroPagosController::class);
+
+Route::apiResource('apiCarreras',CarrerasController::class);
