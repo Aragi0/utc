@@ -1,4 +1,4 @@
-@extends('nuevo')
+@extends('layaout.plantilla')
 @section('css')
     <link href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -9,31 +9,7 @@
 <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 <link rel="" href="https://cdn.datatables.net/fixedheader/3.1.6/css/fixedHeader.dataTables.min.css">
 
-<style>
-  input[type=text]{
-    outline:none;
-    padding:8px;
-    box-sizing:border-box;
-    transition:.3s;
-  }
-  
-  input[type=text]:focus{
-    border-color:seagreen;
-    box-shadow:0 0 8px 0 seagreen;
-  }
-  input[list]
-{
-  margin-left:auto;
-    margin-right:auto;
 
-    max-width: 500px;
-    background: #D2E9FF;
-    padding: 20px 20px 20px 20px;
-    font: 16px Arial, Helvetica, sans-serif;
-    color: #666;
-}
-
-  </style>
 
 @endsection
 
