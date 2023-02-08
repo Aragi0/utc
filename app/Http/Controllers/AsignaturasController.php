@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Asignaturas;
 
 class AsignaturasController extends Controller
 {
@@ -14,6 +15,7 @@ class AsignaturasController extends Controller
     public function index()
     {
         //
+        return Asignaturas::all();
     }
 
     /**

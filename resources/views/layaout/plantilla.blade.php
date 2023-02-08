@@ -101,11 +101,12 @@
       </div>
     </div><!--fin del modo negro y blanco-->
   </div> <!--fin delconotenedor-->
-  <script src="js/script.js"></script>
   <script src="js/reload.js"></script>
   <script src="js/vue.js"></script>
   <script src="js/vue-resource.js"></script>
   <script src="js/vue-resource.min.js"></script>
+  <script type="text/javascript" src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/jquery-3.6.3.min.js') }}"></script>
   @stack('scripts')
 </body>
 
