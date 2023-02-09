@@ -42,8 +42,8 @@
   --color-light: rgba(0, 0, 0, 0.4);
   --box-shadow: 0 2rem 3rem var(--color-light);
   /*caombio de modo defauld*/
-  --color-background: #eeeeee;
-  --color-white: #f5f5f5;
+  --color-background: #f4f4f8;
+  --color-white: #ffffff;
   --color-dark: #363949;/*color de los titulos*/
   --color-dark-variant: #677483;
   --color-dark-variant: #677483;
@@ -117,6 +117,18 @@ h5 {
 
 small {
   font-size: 0.75rem;
+}
+
+main .recent-orders button{
+  padding: 10px 15px;
+  color: var(--color-dark);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  background: var(--color-white);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+
 }
 
 .profile-photo {
