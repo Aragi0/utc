@@ -14,5 +14,6 @@ class Servicios extends Model
           'codigo_serv',
           'nombre_serv',
           'precio_serv',
+          'created_at',
 ];
 }
