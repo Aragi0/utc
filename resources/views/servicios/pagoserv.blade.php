@@ -35,7 +35,8 @@
                         <th scope="col" class="text-center">SERVICIO</th>
                         <th scope="col" class="text-center">MATRICULA</th>
                         <th scope="col" class="text-center">FECHA DE PAGO SERVICIO</th>
-                        <th scope="col" class="text-center">ACCIONES</th>
+                        <th scope="col" class="text-center">EDITAR</th>
+                        <th scope="col" class="text-center">BORRAR</th>
                     </tr>
                 </thead>
                 <tbody class="table-group-divider">
@@ -50,7 +51,8 @@
                         <td class="text-center">
 
                             <a href="{{ url('registrop', [$row]) }}" class="btn bg-warning"><i class="fa-solid fa-pencil"></i></a>
-
+                            </td>
+<td class="text-center  fw-bold fs-6" style="width:1%">
                             <form method="POST" action="{{ url('registrop', [$row]) }}">
                                 @method("delete")
                                 @csrf
