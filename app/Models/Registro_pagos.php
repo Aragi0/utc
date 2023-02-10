@@ -16,6 +16,7 @@ class Registro_pagos extends Model
         'id_servicio',
         'id_matricula',
         'estado',
+        'created_at',
     ];
     public function servicios(){
         return $this->belongsTo(Servicios::class, 'id_servicio');

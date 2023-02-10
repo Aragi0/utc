@@ -38,36 +38,30 @@ Route::view('altamatricula','altas.altaMatricula');
 Route::view('altaasignatura','altas.altaAsignatura');
 Route::view('altacarrera','altas.altaCarrera');
 Route::view('vistamodal','altas.vistamodal');
-
-
-Route::get('/apiAlumnos',[AlumnosController::class, 'index']);
-
-Route::apiResource('apiMaestros',MaestrosController::class);
-Route::apiResource('apiGradoMae',GradoMaestroController::class);
-
 Route::resource('servicios', App\Http\Controllers\ServiciosController::class);
 Route::resource('registrop', App\Http\Controllers\RegistroPagosController::class);
-
 Route::apiResource('apiCarreras',CarrerasController::class);
 
 // AQUI SE VAN A ENRUTAR TODAS LAS VISTAS
 
-// RUTAS DE OSCAR 
+// RUTAS DE OSCAR
 
-// RUTAS DE DAVID 
-
-// RUTAS DE HECTOR 
+// RUTAS DE DAVID
+Route::view('Alumnos','prueb.alumnos');
+// RUTAS DE HECTOR
 
 // RUTAS DE PANCHO
 
 
 // AQUI SE VAN A ENRUTAR TODAS LAS APIS (CONTROLADORES)
 
-// RUTAS DE OSCAR 
+// RUTAS DE OSCAR
 
-// RUTAS DE DAVID 
-
-// RUTAS DE HECTOR 
+// RUTAS DE DAVID
+Route::get('/apiAlumnos',[AlumnosController::class,'index']);
+Route::get('/apiMaestros',[MaestrosController::class,'index']);
+Route::get('/apiGradoMae',[GradoMaestroController::class,'index']);
+// RUTAS DE HECTOR
 
 // RUTAS DE PANCHO
 Route::apiResource('apiCarrera', CarrerasController::class);

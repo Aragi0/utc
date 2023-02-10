@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="images/utc-log.png">
+  @yield('css')
   <title>UTC</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
   <!--de esta pagina toman los iconos https://fonts.google.com/icons?icon.platform=web&icon.set=Material+Icons&icon.style=Sharp
@@ -14,7 +15,10 @@
   <span class="material-icons-sharp">
     nombre en ingles
   </span>-->
+
+  <link href="{{ asset('css/all.min.css') }}" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- Aqui esta el token de vue -->
   <meta name="token" id="token" value="{{ csrf_token() }}">
   <!-- aqui ya finaliza el token de vue -->
@@ -107,7 +111,10 @@
   <script src="js/vue-resource.min.js"></script>
   <script type="text/javascript" src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/jquery-3.6.3.min.js') }}"></script>
+  
   @stack('scripts')
+  
 </body>
-
+@yield('js')
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </html>

@@ -1,4 +1,18 @@
 @extends('nuevo')
+@section('css')
+<link href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- EXPORTAR EXEL -->
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css">    
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap5.min.css">
+<!-- SELECT 2 -->
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<link rel="" href="https://cdn.datatables.net/fixedheader/3.1.6/css/fixedHeader.dataTables.min.css">
+
+
+
+@endsection
+
 @section('contenido')
 <div class= "row mt-3">
     <div class="col-md-4 offset-md-4">
@@ -23,11 +37,11 @@
         <th scope="col"class="text-center">CODIGO DEL SERVICIO</th>
         <th scope="col"class="text-center">NOMBRE DEL SERVICIO</th>
         <th scope="col"class="text-center">PRECIO DEL SERVICIO "MX"</th>
-        <th scope="col"class="text-center">EDIAT</th>
-        <th scope="col"class="text-center">ELIMINAR</th>
+        <th scope="col"class="text-center" style="width:1%">EDIATAR</th>
+        <th scope="col"class="text-center"style="width:1%">ELIMINAR</th>
     </tr>
                 </thead>
-                <tbody class="table-group-divider">
+                <tbody class="table-group-divider" style="width:1%">
                     @foreach($servicios as $row)
                     <tr>
                         
@@ -35,19 +49,15 @@
                         <td class="text-center  fw-bold fs-6">{{ $row->nombre_serv }}</td>
                         <td class="text-center  text-success fw-bold fs-6">{{ $row->precio_serv }}</td>
                 
-                        <td class="text-center  fw-bold fs-6">
+                        <td class="text-center">
 
-        <a href="{{ url('servicios', [$row]) }}" class="btn bg-warning"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
-  <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-</svg></a>
+        <a href="{{ url('servicios', [$row]) }}" class="btn bg-warning"><i class="fa-solid fa-pencil"></i></a>
 </td>
-<td class="text-center  fw-bold fs-6">
+<td class="text-center  fw-bold fs-6" style="width:1%">
            <form method="POST" action="{{ url('servicios', [$row]) }}">
             @method("delete")
             @csrf
-            <button class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
-  <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
-</svg></button>
+            <button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
 
            </form>
                         </td>
@@ -58,10 +68,13 @@
             </table>
 
             @section('js')
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
 
-
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.18/dist/sweetalert2.all.min.js"></script>
  <!-- Para usar los botones -->
  <script src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
@@ -74,9 +87,6 @@
 <!-- Para los estilos en Excel -->
 <script src="https://cdn.jsdelivr.net/npm/datatables-buttons-excel-styles@1.1.1/js/buttons.html5.styles.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/datatables-buttons-excel-styles@1.1.1/js/buttons.html5.styles.templates.min.js"></script>
-            <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-            <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
-            <script src="https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap.min.js"></script>
             <script> 
              //  EMPIEZA DATATABLES
              $(document).ready(function(){
@@ -157,7 +167,7 @@
 </div>
 
 <!-- EMPIEZA VENTANA MODAL -->
-<div class="modal fade" id="modalServicios" tabindex="-1" aria-hidden="true">
+<div class="modal fade" id="modalServicios" tabindex="-1" aria-hidden="true" data-bs-backdrop="static">
     <div class="modal-dialog">
     <div class="modal-content">
     <div class="modal-header">
