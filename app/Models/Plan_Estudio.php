@@ -11,11 +11,11 @@ class Plan_Estudio extends Model
 {
     use HasFactory;
 
-    protected $table='plan';
+    protected $table='plan_estudio';
 
     protected $primaryKey='id';
 
-    protected $whit=['plan_estudio'];
+    protected $whit=['asignaturas'];
 
     public $incrementing=false;
 

@@ -19,7 +19,7 @@
                 <td>@{{run.id}}</td>
                 <td>@{{run.codigo_carrera}}</td>
                 <td>@{{run.nombre_carrera}}</td>
-                <td></td>
+                <td>@{{run.id_plan}}</td>
             </tr>
         </tbody>
     </table>

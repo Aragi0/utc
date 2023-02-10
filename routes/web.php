@@ -5,6 +5,8 @@ use App\Http\Controllers\AlumnosController;
 use App\Http\Controllers\CarrerasController;
 use App\Http\Controllers\MaestrosController;
 use App\Http\Controllers\GradoMaestroController;
+use App\Http\Controllers\Plan_EstudioController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -69,3 +71,4 @@ Route::apiResource('apiCarreras',CarrerasController::class);
 
 // RUTAS DE PANCHO
 Route::apiResource('apiCarrera', CarrerasController::class);
+Route::apiResource('apiPlan',PlanEstudioController::class);
