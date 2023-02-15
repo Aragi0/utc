@@ -6,6 +6,7 @@ use App\Http\Controllers\CarrerasController;
 use App\Http\Controllers\MaestrosController;
 use App\Http\Controllers\GradoMaestroController;
 use App\Http\Controllers\Plan_EstudioController;
+use App\Http\Controllers\PlanEstudioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,5 +65,8 @@ Route::get('/apiGradoMae',[GradoMaestroController::class,'index']);
 // RUTAS DE HECTOR
 
 // RUTAS DE PANCHO
-Route::apiResource('apiCarrera', CarrerasController::class);
-Route::apiResource('apiPlan',PlanEstudioController::class);
+// Route::apiResource('apiCarrera', CarrerasController::class);
+// Route::apiResource('apiPlan',PlanEstudioController::class);
+
+Route::resource('carreras',CarrerasController::class);
+Route::resource('planEstudios',PlanEstudioController::class);

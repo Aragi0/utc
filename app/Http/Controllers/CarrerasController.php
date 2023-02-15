@@ -16,7 +16,8 @@ class CarrerasController extends Controller
     public function index()
     {
         //
-        return Carreras::all();
+        $carreras = Carreras::all();
+        return view('try.carreras',compact('carreras'));
     }
 
     /**
@@ -28,13 +29,9 @@ class CarrerasController extends Controller
     public function store(Request $request)
     {
         //
-        $carrera=new Carreras();
-        $carrera->id=$request->get('id');
-        $carrera->nombre=$request->get('codigo');
-        $carrera->precio=$request->get('nombre_carrera');
-        $carrera->cantidad=$request->get('id_plan');
-
-        $carrera->save();
+        $carrera = new Carreras($request->input());
+        $carrera->saveOrFail();
+        return redirect('carreras');
     }
 
     /**
@@ -46,7 +43,8 @@ class CarrerasController extends Controller
     public function show($id)
     {
         //
-        return Carreras::find($id);
+        $carrera = Carreras::find($id);
+        return view('try.editarCarrera',compact('carrera'));
     }
 
     /**
@@ -59,13 +57,10 @@ class CarrerasController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $carrera= Carreras::find($id);
-        $carrera->id=$request->get('id');
-        $carrera->nombre=$request->get('codigo');
-        $carrera->precio=$request->get('nombre_carrera');
-        $carrera->cantidad=$request->get('id_plan');
-
-        $carrera->update();
+        $carrera = Carreras::find($id);
+        $carrera->fill($request->input())->saveOrFail();
+        return redirect('carreras');
+ 
     }
 
     /**
@@ -77,7 +72,9 @@ class CarrerasController extends Controller
     public function destroy($id)
     {
         //
-        $carrera= Carreras::find($id);
+        $carrera = Carreras::find($id);
         $carrera->delete();
+        return redirect('carreras');
+        
     }
 }

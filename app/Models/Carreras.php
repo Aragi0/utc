@@ -9,20 +9,12 @@ use App\Models\Plan_Estudio;
 class Carreras extends Model
 {
     use HasFactory;
-
-    protected $table='carreras';
-
-    protected $primaryKey='id';
-
-    protected $whit=['plan_estudio'];
-
-    public $incrementing=false;
-
     public $timestamps=false;
-
+    protected $table = "carreras";
+    protected $primaryKey = "id";
     protected $fillable=[
         'id',
-        'codigo',
+        'codigo_carrera',
         'nombre_carrera',
         'id_plan'
     ];

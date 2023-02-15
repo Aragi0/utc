@@ -15,7 +15,8 @@ class PlanEstudioController extends Controller
     public function index()
     {
         //
-        return Plan_Estudio::all();
+        $planEstudios = Plan_Estudio::all();
+        return view('try.planEstudio',compact('planEstudios'));
         
     }
 
